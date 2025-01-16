@@ -1,6 +1,8 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 app.use(express.json())
+app.use(cors())
 const format = require('date-fns/format')
 const isValid = require('date-fns/isValid')
 const toDate = require('date-fns/toDate')
